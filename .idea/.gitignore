@@ -1,4 +1,5 @@
 # デフォルトの無視対象ファイル
 /shelf/
 /workspace.xml
-/target/
+target/
+/springBoot.drawio.png
