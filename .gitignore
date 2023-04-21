@@ -2,5 +2,5 @@
 /shelf/
 /workspace.xml
 # コンパイル時のクラス
-target/
+/target/
 /springBoot.drawio.png
