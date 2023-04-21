@@ -1,6 +1,2 @@
-# デフォルトの無視対象ファイル
-/shelf/
-/workspace.xml
 # コンパイル時のクラス
-/target/
-/springBoot.drawio.png
+target/
