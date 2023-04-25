@@ -1,6 +1,17 @@
 hello:
   text: hello
 
+api:
+  mono:
+    mono-just:
+      url: http://localhost:8081/monoJust
+    mono-zip:
+      url: http://localhost:8081/monoZip
+    flux-just:
+      url: http://localhost:8081/FluxJust
+    flux-zip:
+      url: http://localhost:8081/FluxZip
+
 
 
 
