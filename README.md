@@ -1,6 +1,19 @@
 # spring-webflux-practice
 spring-webfluxに置き換え
 
+起動方法：
+
+1.このプロジェクトを起動させる
+
+2.連携プロジェクトを起動させる
+
+ 連携プロジェクト:
+
+  https://github.com/Shinya-Takiyoshi/spring-webflux-api-practice
+
+3.このプロジェクトのエンドポイントにアクセスする
+
+
 # Mono
 単体のオブジェクト(object)
 
