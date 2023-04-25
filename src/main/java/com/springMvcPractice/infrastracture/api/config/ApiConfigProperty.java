@@ -12,22 +12,35 @@ import java.util.Map;
 @ConfigurationProperties("api")
 @Setter
 public class ApiConfigProperty {
-    private Map<String,ApiProperty> mono;
+    private Map<String, ApiProperty> mono;
 
     @Bean
-    public ApiProperty getMonoJust(){return this.mono.get("mono-just");}
-    @Bean
-    public ApiProperty getMonoZip(){return this.mono.get("mono-zip");}
-    @Bean
-    public ApiProperty getFluxJust(){return this.mono.get("flux-just");}
-    @Bean
-    public ApiProperty getFluxZip(){return this.mono.get("flux-zip");}
+    public ApiProperty getMonoJust() {
+        return this.mono.get("mono-just");
+    }
 
     @Bean
-    public ApiProperty getFluxInterval(){return this.mono.get("flux-interval");}
+    public ApiProperty getMonoZip() {
+        return this.mono.get("mono-zip");
+    }
+
+    @Bean
+    public ApiProperty getFluxJust() {
+        return this.mono.get("flux-just");
+    }
+
+    @Bean
+    public ApiProperty getFluxZip() {
+        return this.mono.get("flux-zip");
+    }
+
+    @Bean
+    public ApiProperty getFluxInterval() {
+        return this.mono.get("flux-interval");
+    }
 
     @Data
-    public static class ApiProperty{
+    public static class ApiProperty {
         private String url;
     }
 }

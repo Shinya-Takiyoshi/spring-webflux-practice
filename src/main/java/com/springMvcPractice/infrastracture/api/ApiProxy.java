@@ -11,7 +11,8 @@ import reactor.core.publisher.Mono;
 public class ApiProxy {
 
     private final ApiConfigProperty apiConfig;
-    public Mono<String> getApiMonoJust(){
+
+    public Mono<String> getApiMonoJust() {
         WebClient webClient = WebClient.create();
         return webClient.get()
                 .uri(apiConfig.getMonoJust().getUrl())
@@ -19,7 +20,7 @@ public class ApiProxy {
                 .bodyToMono(String.class);
     }
 
-    public Mono<String> getApiMonoZip(){
+    public Mono<String> getApiMonoZip() {
         WebClient webClient = WebClient.create();
         return webClient.get()
                 .uri(apiConfig.getMonoZip().getUrl())
@@ -27,7 +28,7 @@ public class ApiProxy {
                 .bodyToMono(String.class);
     }
 
-    public Mono<String> getApiFluxJust(){
+    public Mono<String> getApiFluxJust() {
         WebClient webClient = WebClient.create();
         return webClient.get()
                 .uri(apiConfig.getFluxJust().getUrl())
@@ -35,7 +36,7 @@ public class ApiProxy {
                 .bodyToMono(String.class);
     }
 
-    public Mono<String> getApiFluxZip(){
+    public Mono<String> getApiFluxZip() {
         WebClient webClient = WebClient.create();
         return webClient.get()
                 .uri(apiConfig.getFluxZip().getUrl())
@@ -43,7 +44,7 @@ public class ApiProxy {
                 .bodyToMono(String.class);
     }
 
-    public Mono<String> getApiFluxInterval(){
+    public Mono<String> getApiFluxInterval() {
         WebClient webClient = WebClient.create();
         return webClient.get()
                 .uri(apiConfig.getFluxInterval().getUrl())
