@@ -43,4 +43,12 @@ public class ApiProxy {
                 .bodyToMono(String.class);
     }
 
+    public Mono<String> getApiFluxInterval(){
+        WebClient webClient = WebClient.create();
+        return webClient.get()
+                .uri(apiConfig.getFluxInterval().getUrl())
+                .retrieve()
+                .bodyToMono(String.class);
+    }
+
 }

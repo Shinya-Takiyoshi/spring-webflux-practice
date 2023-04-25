@@ -23,6 +23,9 @@ public class ApiConfigProperty {
     @Bean
     public ApiProperty getFluxZip(){return this.mono.get("flux-zip");}
 
+    @Bean
+    public ApiProperty getFluxInterval(){return this.mono.get("flux-interval");}
+
     @Data
     public static class ApiProperty{
         private String url;

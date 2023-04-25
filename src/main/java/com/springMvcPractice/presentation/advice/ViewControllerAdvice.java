@@ -40,10 +40,11 @@ public class ViewControllerAdvice {
         return mono;
     }
 
-    @ModelAttribute("FluxInterval")
+    //呼び出すとレスポンス遅いのでお試しの時だけ
+    /*@ModelAttribute("FluxInterval")
     public Mono<String> fluxIntervalReceive(){
-        Mono<String> mono = apiProxy.getApiMonoJust();
+        Mono<String> mono = apiProxy.getApiFluxInterval();
         System.out.println("mono:"+mono.block());
         return mono;
-    }
+    }*/
 }

@@ -11,6 +11,8 @@ api:
       url: http://localhost:8081/FluxJust
     flux-zip:
       url: http://localhost:8081/FluxZip
+    flux-interval:
+      url: http://localhost:8081/FluxInterval
 
 
 
