@@ -2,17 +2,18 @@ hello:
   text: hello
 
 api:
+  baseUrl: http://localhost:8081
   mono:
     mono-just:
-      url: http://localhost:8081/monoJust
+      url: /monoJust
     mono-zip:
-      url: http://localhost:8081/monoZip
+      url: /monoZip
     flux-just:
-      url: http://localhost:8081/FluxJust
+      url: /FluxJust
     flux-zip:
-      url: http://localhost:8081/FluxZip
+      url: /FluxZip
     flux-interval:
-      url: http://localhost:8081/FluxInterval
+      url: /FluxInterval
 
 
 

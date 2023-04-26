@@ -13,6 +13,10 @@ import java.util.Map;
 @Setter
 public class ApiConfigProperty {
     private Map<String, ApiProperty> mono;
+    private String baseUrl;
+
+    @Bean
+    public String getBaseUrl() {return this.baseUrl;}
 
     @Bean
     public ApiProperty getMonoJust() {
